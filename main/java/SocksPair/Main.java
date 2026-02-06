@@ -1,4 +1,4 @@
-package AlgorithmsAndDataStructures.LeetCode.SocksPair;
+package SocksPair;
 
 import java.util.ArrayList;
 import java.util.HashSet;
