@@ -2,21 +2,25 @@ package FizzBuzz;
 
 public class FizzBuzz {
 
-    public byte[] FizzBuzz(int value) {
+    public String fizzBuzzSolution(int number){
 
-        StringBuilder sb = new StringBuilder();
+        boolean divisibleby3 = number % 3 == 0;
+        boolean divisibleBy5 = number % 5 == 0;
 
-        boolean divisibleBy3 = value % 3 == 0;
-        boolean divisibleBy5 = value % 5 == 0;
+        if(divisibleby3 && divisibleBy5) {
+            return "FizzBuzz";
+        }
 
-        if(!divisibleBy3 && !divisibleBy5) throw new IllegalArgumentException();
-        if(divisibleBy3 && divisibleBy5) sb.append("fizzbuzz");
+        else if (divisibleby3) {
+            return "Fizz";
+        }
 
-        if(value % 3 == 0) sb.append("fizz");
-        if(value % 5 == 0) sb.append("buzz");
-
-        return sb.toString().getBytes();
+        else if (divisibleBy5){
+            return "Buzz";
+        }
+        else {
+            return String.valueOf(number);
+        }
 
     }
-
 }
