@@ -6,7 +6,7 @@ import java.util.concurrent.ThreadPoolExecutor;
 
 public class Main {
     public static void main(String[] args) throws InterruptedException {
-        ExecutorService pool = Executors.newFixedThreadPool(4);
+        ExecutorService pool = Executors.newFixedThreadPool(2);
         int counter = 2;
 
         for (int i = 0; i < counter; i++){
