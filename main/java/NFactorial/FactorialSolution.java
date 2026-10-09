@@ -12,6 +12,7 @@ public class FactorialSolution {
 
         for(int i = 1; i <= number; i++){
                 result *= i;
+                System.out.println(i);
         }
 
         System.out.println("The answer is: " + result);
